@@ -17,6 +17,6 @@ int main()
             count2++;
         }
     }
-    printf("%d in",count1);
-    printf("%d out",count2);
+    printf("%d in\n",count1);
+    printf("%d out\n",count2);
 }
