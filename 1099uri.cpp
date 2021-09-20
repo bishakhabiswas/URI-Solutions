@@ -3,23 +3,23 @@ using namespace std;
 int main()
 {
     int t,a,b,sum=0,p=0;
-cin>>t;
-for( int i=0;i<t;i++)
-{
-    cin>>a>>b;
-    if(a>b)
+    cin>>t;
+    for( int i=0; i<t; i++)
     {
-     swap(b,a);
-
-    }
-    for( int p=a+1;p<b;p++)
-    {
-        if(p%2!=0)
+        cin>>a>>b;
+        if(a>b)
         {
-            sum+=p;
+            swap(b,a);
+
         }
+        for( int p=a+1; p<b; p++)
+        {
+            if(p%2!=0)
+            {
+                sum+=p;
+            }
+        }
+        cout<<sum<<endl;
+        sum=0;
     }
-    cout<<sum<<endl;
-    sum=0;
-}
 }
